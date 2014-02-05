@@ -135,7 +135,7 @@ angular.module('highcharts-ng', []).directive('highchart', function () {
             }
           }
         } else {
-          chart.addSeries(angular.copy(s), false);
+          chart.addSeries(angular.copy(s), true);
         }
         prevOptions[s.id] = chartOptionsWithoutEasyOptions(s);
       });
